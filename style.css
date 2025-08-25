@@ -52,7 +52,9 @@ canvas {
     padding: 320px 20px;
     text-align: center;
     color: black;
+    max-height: 800px;
     max-width: 800px;
     margin-bottom: 20px;
     background-color: cornflowerblue;
+    border-bottom: darkgreen solid 10px;
 }
