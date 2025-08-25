@@ -47,10 +47,16 @@ function renderChart() {
 const ctx = document.getElementById('progressChart').getContext('2d');
 const data = logs.map(l => l.rating);
 const labels = logs.map(l => l.date);
-new Chart(ctx, {
-type: 'line',
-data: {
-labels,
-datasets: [{
-label: 'Session Rating',
-window.onload = renderChart;
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [{
+                label: 'Session Rating',
+                data,
+                borderColor: 'blue',
+                fill: false
+            }]
+        }
+    });
+}
