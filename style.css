@@ -48,8 +48,8 @@ canvas {
 
     /* background-color: cornflowerblue; */
     border-radius: 25px;
-    
-    padding: 320px;
+
+    padding: 320px 20px;
     text-align: center;
     color: black;
     max-width: 800px;
