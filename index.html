@@ -7,5 +7,53 @@
 </head>
 <body>
     <h1>Golf Practice Planner</h1>
+    <h1>🏌️ Golf Practice Companion</h1>
+    
+    
+    <section id="plan-section">
+        <h2>Practice Plan Builder</h2>
+        <label>Time Available (mins)</label>
+        <input type="number" id="time" placeholder="e.g. 60" />
+        <label>Focus Area</label>
+        <select id="focus">
+            <option>Driving</option>
+            <option>Short Game</option>
+            <option>Putting</option>
+            <option>Full Game</option>
+        </select>
+        <button onclick="generatePlan()">Generate Plan</button>
+        <div id="plan-output"></div>
+    </section>
+    
+    
+    <section id="drill-section">
+        <h2>Instant Drill Generator</h2>
+        <label>Choose Problem Area</label>
+        <select id="problem">
+            <option value="alignment">Alignment</option>
+            <option value="swing">Swing Path</option>
+            <option value="grip">Grip</option>
+            <option value="tempo">Tempo</option>
+        </select>
+        <button onclick="generateDrills()">Get Drills</button>
+        <div id="drill-output"></div>
+    </section>
+    
+    
+    <section id="log-section">
+        <h2>Progress Tracker</h2>
+        <label>Date</label>
+        <input type="date" id="log-date" />
+        <label>Focus</label>
+        <input type="text" id="log-focus" />
+        <label>Rating (1-10)</label>
+        <input type="number" id="log-rating" min="1" max="10" />
+        <label>Notes</label>
+        <textarea id="log-notes"></textarea>
+        <button onclick="saveLog()">Save Log</button>
+        <div>
+            <canvas id="progressChart"></canvas>
+        </div>
+    </section>
 </body>
 </html>
