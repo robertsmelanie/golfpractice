@@ -43,12 +43,12 @@ canvas {
     align-items: center;
     justify-content: center;
 
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     border-radius: 25px;
     padding: 20px;
     padding: 320px;
     text-align: center;
-    color: white;
+    color: black;
     max-width: 800px;
     margin-bottom: 20px;
 }
