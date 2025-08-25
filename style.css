@@ -9,7 +9,10 @@ body {
     height: 100vh;
 }
 
-h1,
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
 h2 {
     text-align: center;
     /* width: 755px; */
@@ -45,7 +48,7 @@ canvas {
 
     /* background-color: cornflowerblue; */
     border-radius: 25px;
-    padding: 20px;
+    
     padding: 320px;
     text-align: center;
     color: black;
